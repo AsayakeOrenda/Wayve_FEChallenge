@@ -7,6 +7,33 @@ hr, table, tbody, thead, tr, th, td {
     border-color: #0dacc8;
 }
 
+hr.short {
+  width:50%;
+}
+
+.title{
+  font-weight: bold;
+  text-align: center;
+  color: #0dacc8;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+/*basic styles*/
+.center-this {
+  position: relative;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.basic-border {
+  border-color: #0dacc8;
+}
+/*END basic styles*/
+
 /*Header Styling*/
 header {
     display: block;
@@ -19,58 +46,47 @@ header h1 {
     color:white;
     font-weight: bold;
 }
+/*END Header Styling*/
 
 
-.title{
-    font-weight: bold;
-    text-align: center;
-    color: #0dacc8;
-    margin: 0px;
-    margin-bottom: 10px;
+/*Map Styling*/
+.map-area{
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border:1px solid #0dacc8;
 }
 
-input[type=text] {
-    width: 100%;
-    max-width:400px;
-    border-radius: 2px;
-    border: 1px solid #2f9d6d;
-    padding: 5px;
-    margin: 5px 5px 0px 0px;
-  }
+.map-key {
+  margin: 25px 0px;
+}
 
-label {
-    display: inline-block;
-    text-align: right;
-    color: #2f9d6d;
-    width: 100%;
-    padding: 5px;
-    vertical-align: top;
-    margin-top: 5px;
-  }
-  
-  .message-success {
-    background-color: #2f9d6d;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    margin: 5px 0px;
-    padding: 5px;
-  }
-  
-  .message-warning {
-    background-color: orange;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    margin: 5px 0px;
-    padding: 5px;
-  }
+#map-options {
+  position: relative;
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0px;
+}
+/*END Map Styling*/
 
+/*Chart Styling*/
+/*END Chart Styling*/
 
+.message-success {
+  background-color: #2f9d6d;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 5px 0px;
+  padding: 5px;
+}
 
-/* .btn-primary {
-    background-color: #2f9d6d;
-    border-color: #2f9d6d;
-    display: block;
-} */
-
+.message-warning {
+  background-color: orange;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin: 5px 0px;
+  padding: 5px;
+}
