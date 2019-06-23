@@ -1,0 +1,76 @@
+/*Fonts and Base Colour*/
+h1, h2, h3, h4, h5, p ,th, td {
+  font-family: 'Quicksand', sans-serif;
+}
+
+hr, table, tbody, thead, tr, th, td {
+    border-color: #0dacc8;
+}
+
+/*Header Styling*/
+header {
+    display: block;
+    position: sticky;
+    background-color: #0dacc8;
+    padding: 5px 10px;
+}
+
+header h1 {
+    color:white;
+    font-weight: bold;
+}
+
+
+.title{
+    font-weight: bold;
+    text-align: center;
+    color: #0dacc8;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    max-width:400px;
+    border-radius: 2px;
+    border: 1px solid #2f9d6d;
+    padding: 5px;
+    margin: 5px 5px 0px 0px;
+  }
+
+label {
+    display: inline-block;
+    text-align: right;
+    color: #2f9d6d;
+    width: 100%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+  
+  .message-success {
+    background-color: #2f9d6d;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+  
+  .message-warning {
+    background-color: orange;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 5px 0px;
+    padding: 5px;
+  }
+
+
+
+/* .btn-primary {
+    background-color: #2f9d6d;
+    border-color: #2f9d6d;
+    display: block;
+} */
+

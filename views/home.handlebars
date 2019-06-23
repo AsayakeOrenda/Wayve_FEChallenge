@@ -1,0 +1,42 @@
+{{>headerbar}}
+<div class="container">
+    <h1>Wayve Challenge Portal</h1>
+    <hr/>
+    <!--Nav Bar-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" id="view-map-btn">View Map</button>
+                <button type="button" class="btn btn-default" id="view-chart-btn">View Charts</button>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="content-main">
+        <div id="view-map-content"></div>
+            <h3 class="title">View Map</h3>
+        </div>
+        <div id="view-chart-content">
+            <h3 class="title">View Data</h3>
+            <div class="table">
+                <table class="table table-bordered" style="margin: 0 auto;">
+                    <thead>
+                        <tr>
+                            <th>Reason</th>
+                            <th>Vehicle</th>
+                            <th>Signal</th>
+                            <th>Cyclist</th>
+                            <th>Pedestrian</th>
+                            <th>Parked Vehicle</th>
+                            <th>Roadworks</th>
+                            <th>Other Static</th>
+                            <th>Other Dynamic</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list-chart-data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
