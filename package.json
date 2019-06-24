@@ -1,5 +1,5 @@
 {
-  "name": "jokes",
+  "name": "wayve_puzzle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "MDP",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.5",
     "csv-parse": "^1.2.0",
+    "d3": "^5.9.2",
+    "d3-queue": "^3.0.7",
     "express": "^4.15.2",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.1.2"
+    "handlebars": "^4.1.2",
+    "topojson": "^3.0.2"
   }
 }

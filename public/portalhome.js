@@ -25,15 +25,13 @@
     //Map Options button actions:
     $('#map-show-actions').click((event)=>{
         //update styling:
-        $('#map-show-reasons').removeClass('active');
-        $('#map-show-actions').removeClass('active');
+        $('#map-btn-options').find('button').removeClass('active');
         $('#map-show-actions').addClass('active');
     });
 
     $('#map-show-reasons').click((event)=>{
         //update styling:
-        $('#map-show-actions').removeClass('active');
-        $('#map-show-reasons').removeClass('active');
+        $('#map-btn-options').find('button').removeClass('active');
         $('#map-show-reasons').addClass('active');
     });
 
