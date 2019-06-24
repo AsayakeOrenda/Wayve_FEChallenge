@@ -80,6 +80,12 @@ svg {
   stroke: #ffffff;
   stroke-width: 0.75;
 }
+
+.cambridge-streetarea{
+  fill: none;
+  opacity: 0;
+}
+
 .selected {
   fill: orange;
 }

@@ -1,6 +1,6 @@
 $(document).ready(() => {
         //create dimensions needed for svg. NB: (0,0) is top-left.
-        var margin = { top:50, left: 50, right: 50, bottom: 50};
+        var margin = { top:0, left: 5, right: 5, bottom: 0};
         var height = 500 - margin.top - margin.bottom;
         var width = 500 - margin.left - margin.right;
 
@@ -12,6 +12,16 @@ $(document).ready(() => {
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+        var imgs = svg.selectAll("image")
+                .data([0]);
+                imgs.enter()
+                .append("svg:image")
+                .attr("xlink:href", "/cam_map_street_image.PNG")
+                .attr("x", "0")
+                .attr("y", "0")
+                .attr("width", width)
+                .attr("height", height);
+
         //Read in map cambridge.topojson (compressed geojson)
         d3.queue()
             .defer(d3.json, "map_cambridge.topojson") //map
@@ -21,7 +31,7 @@ $(document).ready(() => {
         //Create projection using geoMercator
         var projection = d3.geoMercator()
                         .scale(50000*4) //zoom in (scale)
-                        .translate([-250, (53640*4)]) //center it (translate)
+                        .translate([-220, (53650*4)]) //center it (translate)
                         //visible at  w/4, h+53500, scale 50k
                         
         //create path (geoPath) using projection
@@ -67,24 +77,21 @@ $(document).ready(() => {
                 })
                 .each(function(d) { 
                     let carActions = d.action;
-                    dataClass = createPlotClass('action', carActions);
-                    d3.select(this).classed(dataClass, true)})
-                // .attr("class", function(d) {
-                //     let carActions = d.action;
-                //     let carReasons = d.reason;
-                //     let c = "car-plot "
-                //     //let plotType = getPlotType();
-                //     dataClass = '"' + createPlotClass('action', carActions) + '"';
-                //     //console.log(dataClass);
-                //     c += dataClass
-                // //d3.select(this).classed(dataClass, true);
-                //     return c;
-                // });
-                //.attr('class', 'car-plot') //Use this for general map plot
-                //.attr("class", function(d) { return d3.select(this).attr("class") + " " + d; })
+                    dataClass = createPlotClass('action', carActions); //colour each point depending on action type
+                    d3.select(this).classed(dataClass, true)
+                })
 
-            //svg.selectAll //add tooltip with details on hover of point
-            
+                    //svg.selectAll //add tooltip with details on hover of point
+                    let maxLong = d3.max(plotpoints, (d) => d.long);
+                    console.log('max long= ' + maxLong);
+                    let minLong = d3.min(plotpoints, (d) => d.long);
+                    console.log('min long= ' + minLong);
+                    let maxLat = d3.max(plotpoints, (d) => d.lat);
+                    console.log('max lat= ' + maxLat);
+                    let minLat = d3.min(plotpoints, (d) => d.lat);
+                    console.log('min lat= ' + minLat);
+
+                
 
             //Add Zoom and Pan functionality
             svg.call(d3.zoom()
