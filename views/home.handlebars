@@ -21,10 +21,37 @@
         <div id="view-map-content">
             <h3 class="title">View Map</h3>
             <hr/>
-            <div id="map-area"></div>
-            <div class="map-key">
-                <h4>Key:</h4>
-                <div id="map-key-contents"></div>
+            <div id="map-area-action"></div>
+            <div id="map-area-reason"></div>
+            <div class="map-key-div">
+                <h4 style="margin-top:0;">Key:</h4>
+                <div id="map-key-contents">
+                    <div id="map-key-actions" class="map-key">
+                        <ul>
+                            <li><div class="key-box action-stop"></div>Stop</li>
+                            <li><div class="key-box action-giveway"></div>Give Way</li>
+                            <li><div class="key-box action-follow"></div>Follow</li>
+                            <li><div class="key-box action-overtake"></div>Overtake</li>
+                            <li><div class="key-box action-undertake"></div>Undertake</li>
+                            <li><div class="key-box action-join"></div>Join</li>
+                            <li><div class="key-box action-negotiation"></div>Negotiation</li>
+                            <li><div class="key-box action-park"></div>Park</li>
+                            <li><div class="key-box action-emergencymaneuver"></div>Emergency Maneuver</li>
+                        </ul>
+                    </div>
+                    <div id="map-key-reasons" class="map-key">
+                        <ul>
+                            <li><div class="key-box reason-vehicle"></div>Vehicle</li>
+                            <li><div class="key-box reason-signal"></div>Signal</li>
+                            <li><div class="key-box reason-cyclist"></div>Cyclist</li>
+                            <li><div class="key-box reason-pedestrian"></div>Pedestrian</li>
+                            <li><div class="key-box reason-parkedvehicle"></div>Parked Vehicle</li>
+                            <li><div class="key-box reason-roadworks"></div>Roadworks</li>
+                            <li><div class="key-box reason-otherstatic"></div>Other Static</li>
+                            <li><div class="key-box reason-otherdynamic"></div>Other Dynamic</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div id="map-options">
@@ -42,6 +69,8 @@
         <div id="view-chart-content">
             <h3 class="title">View Data</h3>
             <hr/>
+            <h3>Action: Emergency Stop</h3>
+            <p>Number of occurances for Emergency stop action by reason:</p>
             <div class="table">
                 <table class="table table-bordered" style="margin: 0 auto;">
                     <thead>

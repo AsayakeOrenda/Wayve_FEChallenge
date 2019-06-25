@@ -81,17 +81,18 @@ $(document).ready(() => {
                     d3.select(this).classed(dataClass, true)
                 })
 
-                    //svg.selectAll //add tooltip with details on hover of point
-                    let maxLong = d3.max(plotpoints, (d) => d.long);
-                    console.log('max long= ' + maxLong);
-                    let minLong = d3.min(plotpoints, (d) => d.long);
-                    console.log('min long= ' + minLong);
-                    let maxLat = d3.max(plotpoints, (d) => d.lat);
-                    console.log('max lat= ' + maxLat);
-                    let minLat = d3.min(plotpoints, (d) => d.lat);
-                    console.log('min lat= ' + minLat);
+                    //add tooltip with details on hover of point
 
-                
+            //Functionality used to find min max long and lat for creating geoplot
+            // let maxLong = d3.max(plotpoints, (d) => d.long);
+            // console.log('max long= ' + maxLong);
+            // let minLong = d3.min(plotpoints, (d) => d.long);
+            // console.log('min long= ' + minLong);
+            // let maxLat = d3.max(plotpoints, (d) => d.lat);
+            // console.log('max lat= ' + maxLat);
+            // let minLat = d3.min(plotpoints, (d) => d.lat);
+            // console.log('min lat= ' + minLat);
+        
 
             //Add Zoom and Pan functionality
             svg.call(d3.zoom()
@@ -106,6 +107,11 @@ $(document).ready(() => {
             }
         }
 
+
+
+
+
+
         function createPlotClass(plotType, dataAttr){
             //Function takes a plot type (action or reason)
             //And a data attribute type (see puzzle json data)
@@ -113,10 +119,6 @@ $(document).ready(() => {
             let builtClass = '';
             builtClass = plotType + '-' + $.trim(dataAttr.toLowerCase());
             return builtClass;
-        }
-
-        function getPlotType() {
-            $('.')
         }
 
 });

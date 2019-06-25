@@ -5,7 +5,7 @@ $(document).ready(() => {
     var width = 500 - margin.left - margin.right;
 
     //create svg for map:
-    var svg = d3.select("#map-area-action")
+    var svg = d3.select("#map-area-reason")
             .append("svg")
             .attr("height", (height + margin.top + margin.bottom))
             .attr("width", (width + margin.left + margin.right))
@@ -69,8 +69,8 @@ $(document).ready(() => {
                 return coords[1];
             })
             .each(function(d) { 
-                let carActions = d.action;
-                dataClass = createPlotClass('action', carActions); //colour each point depending on action type
+                let carReasons = d.reason;
+                dataClass = createPlotClass('reason', carReasons); //colour each point depending on action type
                 d3.select(this).classed(dataClass, true)
             })
 
