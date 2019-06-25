@@ -4,7 +4,6 @@
     $('#map-key-reasons').hide();
     $('#map-area-reason').hide();
 
-
     //Top menu button actions:
     $('#view-map-btn').click((event)=>{
         $('#view-chart-content').hide();

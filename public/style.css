@@ -50,7 +50,7 @@ header h1 {
 
 
 /*Map Styling*/
-#map-area{
+#map-area-action, #map-area-reason {
   height: 502px;
   width: 502px;
   margin: 0 auto;
@@ -82,6 +82,7 @@ header h1 {
   height: 20px;
   vertical-align: middle;
   margin: 5px;
+  margin-top:2px;
 }
 
 #map-options {
@@ -217,12 +218,16 @@ div.tooltip {
   background-color: purple;
 	opacity:0.7;
 }
-
-
 /*END SVG MAP Styles*/
 
 
 /*Chart Styling*/
+#chart-area {
+  height: 202px;
+  width: 502px;
+  margin: 0 auto;
+  border:1px solid #0dacc8;
+}
 /*END Chart Styling*/
 
 .message-success {
