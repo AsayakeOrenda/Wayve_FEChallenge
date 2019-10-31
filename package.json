@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.5",
-    "csv-parse": "^1.2.0",
+    "csv-parse": "^4.4.6",
     "d3": "^5.9.2",
     "d3-queue": "^3.0.7",
     "express": "^4.15.2",
