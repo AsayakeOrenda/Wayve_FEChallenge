@@ -16,7 +16,7 @@
     "d3-queue": "^3.0.7",
     "express": "^4.15.2",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.5.3",
     "topojson": "^3.0.2"
   }
 }
